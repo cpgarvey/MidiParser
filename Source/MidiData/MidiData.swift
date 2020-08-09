@@ -50,7 +50,7 @@ public final class MidiData {
             return BeatsPerMinute.regular
         }
         
-        return BeatsPerMinute(UInt(tempoTrack.extendedTempos[0].bpm))
+        return BeatsPerMinute(UInt(tempoTrack.extendedTempos[0].bpm.rounded()))
     }()
     
     public lazy var ticksPerBeat: TicksPerBeat = TicksPerBeat(UInt(tempoTrack.timeResolution))
