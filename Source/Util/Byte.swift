@@ -8,8 +8,8 @@
 
 import Foundation
 
-typealias Byte = UInt8
-typealias Bytes = [Byte]
+public typealias Byte = UInt8
+public typealias Bytes = [Byte]
 
 protocol Decimalable {
     associatedtype T

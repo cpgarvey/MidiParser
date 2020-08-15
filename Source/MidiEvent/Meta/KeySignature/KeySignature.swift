@@ -15,7 +15,7 @@ public enum KeySignature: Equatable {
     case major(MajorKey)
     case minor(MinorKey)
     
-    var bytes: Bytes {
+    public var bytes: Bytes {
         switch self {
         case let .major(key):
             return [key.rawValue, 0]
