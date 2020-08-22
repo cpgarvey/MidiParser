@@ -25,7 +25,7 @@ public enum KeySignature: Equatable {
     }
 }
 
-public enum MajorKey: UInt8 {
+public enum MajorKey: UInt8, CaseIterable {
     case C = 0
     case G = 1
     case D = 2
@@ -43,7 +43,7 @@ public enum MajorKey: UInt8 {
     case Cflat = 249
 }
 
-public enum MinorKey: UInt8 {
+public enum MinorKey: UInt8, CaseIterable {
     case A = 0
     case E = 1
     case B = 2
